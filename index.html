@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance App</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <p class="logo">financ<span>Ist</span></p>
+        <p class="welcome">Welcome, Log in to start</p>
+        <form action="#">
+            <input type="text" class="user-input" placeholder="user">
+            <input type="password" name="" id="" class="pin-input" placeholder="pin">
+            <button class="login_btn">&rarr;</button>
+        </form>
+    </nav>
+    <main class="app">
+        <div class="balance-box">
+            <div class="balance">
+                <p class="balance-text">Balance</p>
+                <p class="date_text">
+                    As of <span class="date">11/10/2023</span>
+                </p>
+            </div>
+            <p class="amount">$100,000</p>
+        </div>
+        <div class="actions">
+            <div class="movements">
+                <div class="movement_row">
+                    <p class="mov_type deposit">deposit</p>
+                    <p class="mov_date">today</p>
+                    <p class="mov mov_deposit">+500$</p>
+                </div>
+                <div class="movement_row">
+                    <p class="mov_type withdrawal">withdrawal</p>
+                    <p class="mov_date">yesterday</p>
+                    <p class="mov mov_withdrawal">-300$</p>
+                </div>
+            </div>
+            <div class="transfer">
+                <p class="transfer_text">Transfer Money</p>
+                <form action="" class="form">
+                    <label class="transfer_label">transfer to</label>
+                    <label class="transfer_label" for="quantity">amount</label>
+                    <input class="transfer_input transfer_user" type="text" placeholder="user">
+                    <input class="transfer_input transfer_amount" type="number" placeholder="0" id="amount" min="0"
+                        step="100">
+                    <button class="transfer_btn" type="button" value="send">send</button>
+                </form>
+            </div>
+            <div class="loan">
+                <p class="loan_text">
+                    Request Loan
+                </p>
+                <form action="loan">
+                    <input type="number" class="loan_amount" id="quantity" step="" placeholder="0" min="0">
+                    <button class="loan_btn" type="button">
+                        request
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="summary">
+            <p class="in summary_label">
+                IN:
+            </p>
+            <p class="summary_label in_amount">
+                $100
+            </p>
+            <p class="out summary_label">
+                OUT:
+            </p>
+            <p class="summary_label out_amount">
+                $300
+            </p>
+        </div>
+        <p class="logout-timer">
+            You will be logged out in: <span class="timer">05:00</span>
+        </p>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

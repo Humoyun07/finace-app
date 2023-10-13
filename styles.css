@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.app {
+    opacity: 0;
+}
+
+.nav {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    color: dimgray;
+}
+
+.welcome {
+    color: #3F3F44;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.logo {
+    color: #3F3F44;
+    margin-right: 14rem;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.logo span {
+    color: #57D131;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+/* LOGIN FORM */
+.nav form {
+    margin-right: 30px;
+}
+
+/* LOGIN USERNAME AND PIN INPUT */
+.user-input,
+.pin-input {
+    font-family: 'poppins', sans-serif;
+    width: 6rem;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #3F3F44;
+    text-align: center;
+    margin: 5px 10px;
+    border-radius: 6rem;
+    border: 2px solid #ccc;
+}
+
+.user-input:hover,
+.pin-input:hover {
+    border-color: black;
+}
+
+.user-input::placeholder,
+.pin-input::placeholder {
+    color: #ccc;
+}
+
+.login_btn {
+    font-size: 20px;
+    font-weight: 500;
+    width: 2.5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: 2px solid #727d7e;
+    background-color: white;
+}
+
+.login_btn:hover {
+    background-color: #3F3F44;
+    color: white;
+}
+
+/* THE APPLICATION */
+.app {
+    padding: 2% 3%;
+    max-width: 100rem;
+    min-width: 80rem;
+}
+
+/* BALANCE DIV */
+.balance-box {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.balance-text {
+    font-weight: 500;
+    color: #3F3F44;
+    font-size: 40px;
+    margin: 5px 40rem 5px 4rem;
+    margin-right: 40rem;
+}
+
+/* LAst update time */
+.date_text {
+    font-size: 16px;
+    color: #8C999A;
+    font-weight: 500;
+    margin-left: 4rem;
+}
+
+/* BALANCE */
+.amount {
+    color: #3F3F44;
+    font-size: 40px;
+    font-weight: 500;
+    margin-right: 80px;
+}
+
+/* ACTIONS OF ALL: MOVEMENTS AND TRANSFER, LOAN container */
+.actions {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 3 repeat(3, 10rem) auto;
+    gap: 1rem;
+    position: relative;
+    padding: 1% 3%;
+    width: 100%;
+}
+
+/* movements */
+.movements {
+    position: relative;
+    grid-row: 1 / span 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: white;
+    border-radius: 10px;
+    height: 25rem;
+    margin: 0 20px 0 0;
+    overflow: scroll;
+}
+
+/* EACH MOVEMENT ROW */
+.movement_row {
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 2% 4%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccc;
+}
+
+.mov_type {
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 1rem;
+    font-weight: 500;
+}
+
+.deposit {
+    background-image: linear-gradient(to top left, #39b385, #57D131);
+}
+
+.withdrawal {
+    background-image: linear-gradient(to top left, #FD5E53, #F05D23);
+}
+
+.mov_date {
+    margin-right: 300px;
+    font-size: 14px;
+    color: #727d7e;
+    font-weight: 500;
+}
+
+.mov {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.mov_deposit {
+    color: blue;
+}
+
+.mov_withdrawal {
+    color: red;
+}
+
+
+/* Transfer styles */
+.transfer {
+    position: relative;
+    width: 20rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px 10px;
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+/* TRANSFER FORM */
+.form {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+}
+
+.transfer_text,
+.loan_text {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    color: #3F3F44;
+}
+
+.transfer_label {
+    color: #f3f3f3;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.transfer_input,
+.loan_amount {
+    color: #3F3F44;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+    width: 6rem;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 10px;
+    border: white;
+}
+
+.transfer_input {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.transfer_btn {
+    grid-row: 3 / span 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #3F3F44;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    width: 6rem;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5.5rem;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    border: white;
+}
+
+.transfer_btn:hover,
+.loan_btn:hover {
+    background-color: #3F3F44;
+    color: white;
+}
+
+.transfer_input::placeholder {
+    color: white;
+    cursor: pointer;
+}
+
+.transfer_input:focus::placeholder,
+.loan_amount:focus::placeholder {
+    color: transparent;
+}
+
+
+/* LOAN DIV */
+
+.loan {
+    position: relative;
+    display: grid;
+    width: 20rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px 5px;
+    background-image: linear-gradient(to bottom right, #ddfa77, #d6cc03);
+}
+
+.loan_btn {
+    color: #3F3F44;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    width: 6rem;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+    border: white;
+}
+
+/* SUMMARY DIV styles */
+.summary {
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: baseline;
+    width: 35%;
+    justify-content: space-between;
+    margin: 30px 20px;
+    padding: 20px 80px;
+}
+
+.summary_label {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin: 0 10px;
+}
+
+.in_amount {
+    color: #57D131;
+}
+
+.out_amount {
+    color: #F05D23;
+}
+
+/* timer */
+.logout-timer {
+    display: flex;
+    width: 20rem;
+    align-items: baseline;
+    margin-left: 60rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* TIME LEFT */
+.timer {
+    margin-left: 5px;
+    color: #F05D23;
+    font-weight: 600;
+    font-size: 16px;
+}
